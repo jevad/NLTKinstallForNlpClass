@@ -11,6 +11,8 @@
 * Use Miniconda or Anaconda to set up an environment for the class.
 * Use the "standard tools", pip and virtualenv, to set up an environment for the class. 
 
+[Notes](#notes)
+* non-ASCII characters
 
 <a name="audience"/>
 ## Audience
@@ -32,7 +34,7 @@ What you'll find here are some easier ways to get things installed on Windows.
 
 <a name="easiest"/>
 ## The Easiest Way to Set Up Python and NLTK on Windows
-The easiest way to set up Python and NLTK on Windows is to use Enthought Canopy, https://www.enthought.com/products/canopy/ , or Continuum Analytics Anaconda, http://docs.continuum.io/anaconda/index .  Both are prepacked "scientific" distributions that come with a number of Python libraries, such as NLTK and NumPy.  The libraries in each distribution are tested to work well with each other.  These distributions are perfect for people working in the areas of machine learning, language processing, text processing or data science who wish to primarily concentrate on their specific field of expertise and not on being an expert Python programmer (although, they're good environments for expert Python programmers too).  Both come with instructions, but, since we've had bad luck with instructions so far, here are my instructions for one of them (Anaconda):
+The easiest way to set up Python and NLTK on Windows is to use Enthought Canopy, https://www.enthought.com/products/canopy/ , or Continuum Analytics Anaconda, http://docs.continuum.io/anaconda/index .  Both are prepackaged "scientific" distributions that come with a number of Python libraries, such as NLTK and NumPy.  The libraries in each distribution are tested to work well with each other.  These distributions are perfect for people working in the areas of machine learning, language processing, text processing or data science who wish to primarily concentrate on their specific field of expertise and not on being an expert Python programmer (although, they're good environments for expert Python programmers too).  Both come with instructions, but, since we've had bad luck with instructions so far, here are my instructions for one of them (Anaconda):
 
 1. Download Anaconda for Python 2.7 from https://www.continuum.io/downloads#_windows .  Get the version that matches your processor.  This is a 335 MB download, so you have time to grab a cup of coffee if you're on a slow network -- resist the temptation to watch cat videos while you're waiting as that will chew up your bandwidth (unless, of course, you planned ahead and have already downloaded cat videos just for this purpose).  
 
@@ -63,3 +65,6 @@ The first command will update conda, the package manager that comes with Anacond
 ## Coming Soon (if I have time):  Some other ways to set things up -- not quite as easy but probably worth the extra effort.
 * Use Miniconda or Anaconda to set up an environment for the class.  (This is the way I have things set up.)
 * Use the "standard tools", pip and virtualenv to set up an environment for the class.  (In 32-bit environments, this should be as easy as it is for Mac or Unix -- just follow the Mac/Unix instructions, leaving out the "sudo" commands.  To get NumPy installed, this might require setting up the Windows SDK in 64-bit environments, which isn't hard but requires instructions if you're not a programmer-type -- I need to check on this.)
+
+<a name="notes"/>
+* non-ASCII characters:  Prior to Python 3, by default, Python strings used ASCII encoding.  ASCII was created to encode transmissions from circa-1960 U.S. teletype machines.  At the time, ASCII was considered a big advance because it could encode BOTH uppercase and lowercase letters.  Folks were so happy that they could send BOTH uppercase and lowercase characters that they didn't even mind that accented characters, non-Latin characters et cetera were not encodable in ASCII.  As a result, if your machine name, user name, home directory name or anything like that has a non-ASCII character in it, you may have difficulty running Python 2.  Computer programmers' typical attitude towards non-ASCII identifiers is, "Why would anyone want to use a non-ASCII character in their user name or machine name or in a directory name?", so it took a while for things to change.  However, beginning with Python 3, by default, Python strings used Unicode UTF-8 enconding.  All of the Unicode encodings support the character sets of any language you are likely to want to use at a computer.  So, if you're using Python 3, you're not likely to run into this problem.  
