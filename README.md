@@ -47,7 +47,7 @@ conda list nltk
 ```  
 The first command will update conda, the package manager that comes with Anaconda.  The second command will update all the installed packages to the latest appropriate version.  The third command will verify that NLTK is installed and will show you the version (If you want to see ALL the packages that are installed, just leave off the "nltk" -- a full package list for Anaconda, with the packages that should be installed by default marked, may be found here:  http://docs.continuum.io/anaconda/pkg-docs .).  
 
-* To verify that everything is working properly (post a help query on the class forum if you get an error or if something doesn't look right):
+* To verify that everything is working properly:
   1. run python
   2. check to make sure the python version is correct
   3. from the python shell, run the following commands:
@@ -55,9 +55,9 @@ The first command will update conda, the package manager that comes with Anacond
   import nltk
   nltk.download()
   ```
-  You should see a Graphical User Interface (GUI) pop up.  If you don't want to download any of the collections, just close the window.  I don't know if we'll need any of the downloads for class or not.  You will need some of them if you want to follow the exercises in Natural Language Processing with Python (see section 1.2, http://www.nltk.org/book/ch01.html , for more information).
+  You should see a Graphical User Interface (GUI) pop up.  If you don't want to download any of the collections, just close the window.  I don't know if we'll need any of the downloads for class or not.  You will need some of them if you want to follow the exercises in Natural Language Processing with Python (see section 1.2, http://www.nltk.org/book/ch01.html , for more information).  If something doesn't work or doesn't look right, post a message on the class forum.
 
 <a name="tbd"/>
-## Coming Soon(if I have time):  Some other ways to set things up -- not quite as easy but probably worth the extra effort.
+## Coming Soon (if I have time):  Some other ways to set things up -- not quite as easy but probably worth the extra effort.
 * Use Miniconda or Anaconda to set up an environment for the class.
 * Use the "standard tools", pip and virtualenv to set up an environment for the class.
