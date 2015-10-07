@@ -20,8 +20,9 @@ This page is to help my classmates taking the Coursera NLP class.  Some of us ha
 ## Initial Comments
 Reading through the class forum posts, I noticed that some people are installing NLTK and Python manually (i.e., the hard way) instead of using Pip or one of the prepackaged "scientific" Python distributions.  I assumed that they _wanted_ to do things the hard way (there are sometimes good reasons to do so), then I noticed the following instructions on the NLTK web site:
 
+---- 
 ![NLTK Installation Instructions](/images/NLTK_instructions.png)
-
+---- 
 Suddenly, it all made sense:  They were doing things the hard way because they were just following instructions!
 
 You'll note that the instructions for Mac and Unix users have you use Pip to install packages; whereas, the instructions for Windows users have you doing everything manually.  What you'll find here are some easier ways to get things installed on Windows.
