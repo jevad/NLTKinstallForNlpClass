@@ -54,7 +54,7 @@ conda update conda
 conda update --all
 conda list nltk
 ```  
-The first command will update conda, the package manager that comes with Anaconda.  The second command will update all the installed packages to the latest appropriate version.  The third command will verify that NLTK is installed and will show you the version (If you want to see ALL the packages that are installed, just leave off the "nltk" -- a full package list for Anaconda, with the packages that should be installed by default marked, may be found here:  http://docs.continuum.io/anaconda/pkg-docs .).  
+The first command will update conda, the package manager that comes with Anaconda.  The second command will update all the installed packages to the latest appropriate version.  The third command will verify that NLTK is installed and will show you the version (If you want to see ALL the packages that are installed, just run `conda list` without any additional arguments.).  
 
 * To verify that everything is working properly:
   1. run python
