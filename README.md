@@ -5,10 +5,11 @@
 
 [Initial Comments](#initial)  
 
-[The Easiest Way to Set Up Python and NLTK on Windows](#easiest)  
+[The Easiest Way to Set Up Python and NLTK on Windows](#easiest) 
+* Use a pre-packaged "scientific" distribution.
 
 [Coming Soon (if I have time):  Some other ways to set things up -- not quite as easy but probably worth the extra effort.](#tbd)  
-* Use Miniconda or Anaconda to set up an environment for the class.
+* Use Miniconda or Anaconda to set up an environment for the class -- this is the way I have things set up.
 * Use the "standard tools", pip and virtualenv, to set up an environment for the class -- this is the way to go if you want to use a Python version that you've already installed (say, by downloading and installing the one from http://www.python.org/ ). 
 
 [Notes](#notes)
@@ -36,6 +37,8 @@ What you'll find here are some easier ways to get things installed on Windows.
 
 <a name="easiest"/>
 ## The Easiest Way to Set Up Python and NLTK on Windows
+* Use a pre-packaged "scientific" distribution.
+
 The easiest way to set up Python and NLTK on Windows is to use Enthought Canopy, https://www.enthought.com/products/canopy/ , or Continuum Analytics Anaconda, http://docs.continuum.io/anaconda/index .  Both are prepackaged "scientific" distributions that come with a number of Python libraries, such as NLTK and NumPy.  The libraries in each distribution are tested to work well with each other.  These distributions are perfect for people working in the areas of machine learning, language processing, text processing or data science who wish to primarily concentrate on their specific field of expertise and not on being an expert Python programmer (although, they're good environments for expert Python programmers too).  Both come with instructions, but, since we've had bad luck with instructions so far, here are my instructions for one of them (Anaconda):
 
 1. Download Anaconda for Python 2.7 from https://www.continuum.io/downloads#_windows .  Get the version that matches your processor.  This is a 335 MB download, so you have time to grab a cup of coffee if you're on a slow network -- resist the temptation to watch cat videos while you're waiting as that will chew up your bandwidth (unless, of course, you planned ahead and have already downloaded cat videos just for this purpose).  
@@ -65,7 +68,7 @@ The first command will update conda, the package manager that comes with Anacond
 
 <a name="tbd"/>
 ## Coming Soon (if I have time):  Some other ways to set things up -- not quite as easy but probably worth the extra effort.
-* Use Miniconda or Anaconda to set up an environment for the class.  (This is the way I have things set up.)
+* Use Miniconda or Anaconda to set up an environment for the class -- this is the way I have things set up.
 * Use the "standard tools", pip and virtualenv, to set up an environment for the class -- this is the way to go if you want to use a Python system that you've already installed.  (In 32-bit environments, this should be as easy as it is for Mac or Unix -- just follow the Mac/Unix instructions, leaving out the "sudo" commands.  To get NumPy installed, this might require setting up the Windows SDK in 64-bit environments, which isn't hard but requires instructions if you're not a programmer-type -- I need to check on this.)
 
 <a name="notes"/>
