@@ -74,13 +74,13 @@ The first command will update conda, the package manager that comes with Anacond
 
 We're going to use Pip, as shown in the Mac/Unix instructions on the NLTK web site (see picture above), to install NLTK and other libraries.  Pip will make our life easier because it will find libraries and so forth for us.  Cool, huh?
 
-First, we need to download and install Python (ff you have not already done so).  The Professor wants to use Python 2.7, so get the latest version of Python 2.7, so go here, https://www.python.org/downloads/ , find the latest version of Python 2.7, and click on the download link.  You'll see a bunch of choices.  For these instructions, we're going to choose the 32-bit MSI installer (which you can identify as the MSI installer that is NOT 64-bit).  There's nothing wrong with the 64-bit version, and you can make 640bit version work if you want to, but, as far as I can tell, most of you have already installed the 32-bit version (perhaps due to the warning on the NLTK instructions), so I'm using that here.  
+First, we need to download and install Python (if you have not already done so).  The Professor wants to use Python 2.7, so get the latest version of Python 2.7, so go here, https://www.python.org/downloads/ , find the latest version of Python 2.7, and click on the download link.  You'll see a bunch of choices.  For these instructions, we're going to choose the 32-bit MSI installer (which you can identify as the MSI installer that is NOT 64-bit).  There's nothing wrong with the 64-bit version, and you can make the 64-bit version work if you wish, but, as far as I can tell, most of you have already installed the 32-bit version (perhaps due to the warning on the NLTK instructions), so I'm using the 32-bit version here.  
 
 You'll be given some options when you install Python.  
-* **When asked, you should choose to add the Python directory to your system PATH.**  
-* Also, for these instructions, I'm assuming that you installed Python in C:\Python27 (That's the "Install for all users option".).  **If you installed it somewhere else, that's fine, but you'll need to modify the paths that appears in the rest of these instructions.**
+* **On the "Customize Python" page, you should choose to "Add python.exe to Path.**  This will add the directory containing Python to your system PATH, which will allow you to run Python without typing in the full path name.  
+* Also, for these instructions, I'm assuming that you installed Python in C:\Python27 (That's the "Install for all users option".).  **If you installed it somewhere else, that's fine, but you'll need to modify the paths that appear in the rest of these instructions to reflect your installation.**
 
-OK.  So we have Python installed.  Open a Windows command prompt and enter:
+OK.  So we have Python installed.  Open a new Windows command prompt and enter:
 ```
 echo %PATH%
 ```
@@ -88,10 +88,11 @@ Do you see BOTH C:\Python27 and C:\Python27\Scripts in your path?  If not, you'l
 1. Go to Control Panel -> System -> Advanced system settings.  
 2. Click on "Environment Variables..."
 3. In the "System variables" section (if you installed Python for "All Users") or in the "User variables" section (if you installed Python just for yourself), click on the PATH variable and then click "Edit...".  
-4. VERY CAREFULLY add C:\Python27 (if it is missing) and C:\Python27\Scripts (if it is missing) to your PATH.  It is important to know and remember that the elements of the PATH are separated by semicolons, `;`.  The PATH is read in order by the operating system, so, if there are two Python installations on your computer, the one that appears first in the PATH will be the one that will be used (in most cases -- some programs, especially IDEs, have a different way of finding other programs, but we won't worry about that for now).  
-5.  When you're satisfied that you have everything as it should be, keep clicking "OK" to save and back out.  
+4. VERY CAREFULLY add C:\Python27 (if it is missing) and C:\Python27\Scripts (if it is missing) to your PATH.  It is important to know and remember that the elements of the PATH are separated by semicolons, `;`, but not by spaces.  The PATH is read in order by the operating system, so, if there are two Python installations on your computer, the one that appears first in the PATH will be the one that will be used (in most cases -- some programs, especially IDEs, have a different way of finding other programs, but we won't worry about that for now).  
+5.  When you're satisfied that you have everything as it should be, keep clicking "OK" to save and back out.
+6.  Close the Windows comamnd prompt you were using, open up a new one, enter `echo %PATH%` and verify that your change happened as expected.
 
-OK.  So now we have Python installed, and we have python and some useful scripts in our system PATH.  We're in the home stretch!
+OK.  So now we have Python installed, and we have Python and some useful scripts in our system PATH.  We're in the home stretch!
 
 Open a Windows command prompt and use pip to install stuff:
 ```
@@ -99,7 +100,10 @@ pip install --upgrade nltk
 ```
 Pip isn't magic -- it needs to get the packages from somewhere, so, if you're not hooked up to the internet, you'll get an error.  (There is a way to have Pip install packages from a local repository -- you can google about that if you're interested.)  
 
-Pip does, however, do quite a bit of work for you.  Notice how, when you installed NLTK, Pip installed other libraries too (like the six library that gave some folks difficulty)!  Those libraries are dependencies that NLTK needs to operate properly.  
+Pip does, however, do quite a bit of work for you.  Notice how, when you installed NLTK, Pip installed other libraries too (like the six library that gave some folks difficulty)!  Those libraries are dependencies that NLTK needs to operate properly.  The `--upgrade` flag tells Pip to update NLTK if it is already installed but not at the latest version.  If we want to see what libraries have been installed by Pip, we use the `list` target:
+```
+pip list 
+```
 
 Now let's install NumPy:
 ```
@@ -111,16 +115,17 @@ There are several possible workarounds, so the first thing you should do is goog
 
 Pip installation packages are known as "wheel files" and usually have the extension, ".whl".  After you've downloaded the wheel file, install the package with pip:
 ```
-pip install numpy-1.9.3+mkl-cp27-none-win32.whl
+pip install Downloads\numpy-1.9.3+mkl-cp27-none-win32.whl
 ```
+(Modify the path to match wherever you've downloaded the wheel file.)
 
-OK.  So now we've installed, Python, NLTK and NumPy.  Let's start up Python and then enter some commands to try out NLTK to make sure things are working -- we'll work through the first couple of sections of _Natural Language Processing with Python_, http://www.nltk.org/book/ch01.html (so look at the book at that link if you're wondering where these statements come from -- I'm going to skip some of the statements, here, but you might want to try out all of them):
+OK.  So now we've installed, Python, NLTK and NumPy.  Let's start up Python by entering `python` at a Windows command prompt.  Then we'll nter some commands to try out NLTK to make sure things are working -- we'll work through the first couple of sections of _Natural Language Processing with Python_, http://www.nltk.org/book/ch01.html (so look at the book at that link if you're wondering where these statements come from -- I'm going to skip some of the statements, here, but you might want to try out all of them):
 ```
 from __future__ import division
 import nltk
 nltk.download()
 ```
-If everything is working correctly, this should bring up a Graphical User Interface (GUI).  Since we're working through the stuff in the book, choose to download the "book" collection.
+If everything is working correctly, this should bring up a Graphical User Interface (GUI).  Since we're working through the stuff in the book, choose to download the "book" collection.  Close the window when the download has completed and your Python command prompt will return.
 ```
 from nltk.book import *
 text4.dispersion_plot(["citizens", "democracy", "freedom", "duties", "America"])
@@ -133,7 +138,9 @@ Now let's go back to the window with our Python prompt and try it again:
 ```
 text4.dispersion_plot(["citizens", "democracy", "freedom", "duties", "America"])
 ```
-And it works!  Hooray!  You're on your way to a happy and productive future with Python and Pip!
+And it works!  Hooray!  :sparkles: :rocket: :sparkles:  You're on your way to a happy and productive future with Python and Pip!
+
+To learn more about your new friend, Pip, see the official documentation, https://pip.pypa.io/en/stable/ .
 
 <a name="tbd"/>
 ## Coming Soon (if I have time):  Some other ways to set things up -- not quite as easy but probably worth the extra effort.
