@@ -22,8 +22,8 @@ Reading through the class forum posts, I noticed that some people are installing
 
 ---- 
 ![NLTK Installation Instructions](/images/NLTK_instructions.png)
----- 
 
+---- 
 Suddenly, it all made sense:  They were doing things the hard way because they were just following instructions!
 
 You'll note that the instructions for Mac and Unix users have you use Pip to install packages; whereas, the instructions for Windows users have you doing everything manually.  What you'll find here are some easier ways to get things installed on Windows.
