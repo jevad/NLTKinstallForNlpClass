@@ -5,10 +5,10 @@
 
 [Initial Comments](#initial)  
 
-[The Easiest Way to Set Up Python and NLTK on Windows](#easiest) 
+[The Easiest Way to Set Up Python and NLTK on Windows](#easiest) -- if you don't already have Python installed, and if you don't care whether or not you use the standard Python installer, this is recommended. 
 * Use a pre-packaged "scientific" distribution.
 
-[Using the Standard Python Installer and Pip](#pip)
+[Using the Standard Python Installer and Pip](#pip) -- if you already have Python installed or if you want to use the standard Python installer, take a look at these instructions.
 
 [Coming Soon (if I have time):  Using virtual environments -- not quite as easy but might be worth the extra effort.](#tbd)  
 * Use Miniconda or Anaconda to set up an environment for the class -- this is the way I have things set up.
@@ -69,7 +69,7 @@ The first command will update conda, the package manager that comes with Anacond
   ```
   You should see a Graphical User Interface (GUI) pop up.  If you don't want to download any of the collections, just close the window.  I don't know if we'll need any of the downloads for class or not.  You will need some of them if you want to follow the exercises in Natural Language Processing with Python (see section 1.2, http://www.nltk.org/book/ch01.html , for more information).  If something doesn't work or doesn't look right, post a message on the class forum.
 
-<a name="pip"
+<a name="pip"/>
 ## Using the Standard Python Installer and Pip
 
 We're going to use Pip, as shown in the Mac/Unix instructions on the NLTK web site (see picture above), to install NLTK and other libraries.  Pip will make our life easier because it will find libraries and so forth for us.  Cool, huh?
