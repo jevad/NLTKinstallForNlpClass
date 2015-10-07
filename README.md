@@ -9,7 +9,7 @@
 
 [Coming Soon (if I have time):  Some other ways to set things up -- not quite as easy but probably worth the extra effort.](#tbd)  
 * Use Miniconda or Anaconda to set up an environment for the class.
-* Use the "standard tools", pip and virtualenv, to set up an environment for the class. 
+* Use the "standard tools", pip and virtualenv, to set up an environment for the class -- this is the way to go if you want to use a Python version that you've already installed (say, by downloading and installing the one from http://www.python.org/ ). 
 
 [Notes](#notes)
 * non-ASCII characters
@@ -29,6 +29,8 @@ Reading through the class forum posts, I noticed that some people are installing
 Suddenly, it all made sense:  People were doing things the hard way because they were just following instructions!
 
 You'll note that the instructions for Mac and Unix users have you use Pip to install packages; whereas, the instructions for Windows users have you doing everything manually and don't really give you much guidance as to how to make that happen -- if you're a progammer-type, you can figure it all out fairly quickly, but, if you're not....  
+
+You'll also notice that the only people posting about installation problems on the class forum are Windows users.  
 
 What you'll find here are some easier ways to get things installed on Windows.
 
@@ -64,7 +66,7 @@ The first command will update conda, the package manager that comes with Anacond
 <a name="tbd"/>
 ## Coming Soon (if I have time):  Some other ways to set things up -- not quite as easy but probably worth the extra effort.
 * Use Miniconda or Anaconda to set up an environment for the class.  (This is the way I have things set up.)
-* Use the "standard tools", pip and virtualenv to set up an environment for the class.  (In 32-bit environments, this should be as easy as it is for Mac or Unix -- just follow the Mac/Unix instructions, leaving out the "sudo" commands.  To get NumPy installed, this might require setting up the Windows SDK in 64-bit environments, which isn't hard but requires instructions if you're not a programmer-type -- I need to check on this.)
+* Use the "standard tools", pip and virtualenv, to set up an environment for the class -- this is the way to go if you want to use a Python system that you've already installed.  (In 32-bit environments, this should be as easy as it is for Mac or Unix -- just follow the Mac/Unix instructions, leaving out the "sudo" commands.  To get NumPy installed, this might require setting up the Windows SDK in 64-bit environments, which isn't hard but requires instructions if you're not a programmer-type -- I need to check on this.)
 
 <a name="notes"/>
 * non-ASCII characters:  Prior to Python 3, by default, Python strings used ASCII encoding.  ASCII was created to encode transmissions from circa-1960 U.S. teletype machines.  At the time, ASCII was considered a big advance because it could encode BOTH uppercase and lowercase letters.  Folks were so happy that they could send BOTH uppercase and lowercase characters that they didn't even mind that accented characters, non-Latin characters et cetera were not encodable in ASCII.  As a result, if your machine name, user name, home directory name or anything like that has a non-ASCII character in it, you may have difficulty running Python 2.  Computer programmers' typical attitude towards non-ASCII identifiers is, "Why would anyone want to use a non-ASCII character in their user name or machine name or in a directory name?", so it took a while for things to change.  However, beginning with Python 3, by default, Python strings used Unicode UTF-8 enconding.  All of the Unicode encodings support the character sets of any language you are likely to want to use at a computer.  So, if you're using Python 3, you're not likely to run into this problem.  
