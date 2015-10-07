@@ -48,7 +48,7 @@ The easiest way to set up Python and NLTK on Windows is to use Enthought Canopy,
 
 That's it.  You're actually done at this point because Anaconda contains NLTK along with plenty of other packages (http://docs.continuum.io/anaconda/pkg-docs ). However, I recommend a couple of other steps:
 
-* Open a Windows command prompt and run the following two commands:
+* Open a Windows command prompt and run the following commands:
 ```
 conda update conda
 conda update --all
