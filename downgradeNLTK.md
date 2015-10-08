@@ -1,7 +1,7 @@
 # Backgrading NLTK
 Our Professor informed us that he would like for us to use NLTK 2, not NLTK 3.
 
-If you installed NLTK using any of the [instructions on the NLTK web site](http://www.nltk.org/install.html), [the instructions that I wrote](./README.md), a default pip installion or a default Anaconda or Miniconda installation, then you have installed either NLTK 3.0.5 or NLTK 3.0.3.  It doesn't make a difference whether you're using Windows, Linux or OS/X.  
+If you installed NLTK using any of the [instructions on the NLTK web site](http://www.nltk.org/install.html), the [download link from the NLTK web site](https://pypi.python.org/pypi/nltk), the [instructions that I wrote](./README.md), a default pip installion or a default Anaconda or Miniconda installation, then you have installed either NLTK 3.0.5 or NLTK 3.0.3.  It doesn't make a difference whether you're using Windows, Linux or OS/X.  
 
 Ideas for performing a backgrade appear below.
 
