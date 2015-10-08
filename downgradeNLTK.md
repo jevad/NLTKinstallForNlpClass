@@ -59,7 +59,7 @@ conda list nltk
 ```
 It's probably 3.0.5 or 3.0.3.  To see what versions of NLTK are available in the conda ecosystem:
 ```
-conda list nltk
+conda search nltk
 ```
 To change the version to 2.0.4:
 ```
