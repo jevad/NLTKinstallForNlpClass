@@ -103,7 +103,7 @@ pip install --upgrade nltk
 ```
 Pip isn't magic -- it needs to get the packages from somewhere, so, if you're not hooked up to the internet, you'll get an error.  (There is a way to have Pip install packages from a local repository -- you can google about that if you're interested.)  
 
-Pip does, however, do quite a bit of work for you.  Notice how, when you installed NLTK, Pip installed other libraries too (like the six library that gave some folks difficulty)!  Those libraries are dependencies that NLTK needs to operate properly.  The `--upgrade` flag tells Pip to update NLTK if it is already installed but not at the latest version.  If we want to see what libraries have been installed by Pip, we use the `list` target:
+Pip does, however, do quite a bit of work for you.  Notice how, when you installed NLTK, Pip checked to see if other libraries also needed to be installed (like the six library that gave some folks difficulty)!  The `--upgrade` flag tells Pip to update NLTK if it is already installed but not at the latest version.  If we want to see what libraries have been installed by Pip, we use the `list` target:
 ```
 pip list 
 ```
@@ -116,13 +116,13 @@ The NumPy installation probably printed out a bunch of warning and error message
 
 There are several possible workarounds, so the first thing you should do is google to see how other people recommend you solve the problem.  You'll run into less problems if you let other folks discover, through trial and error, the best solution for you.  Some Google hits from StackOverflow, http://stackoverflow.com/ , proved to be useful, and the consensus seemed to be to use the installation package from the Gohlke collection, http://www.lfd.uci.edu/~gohlke/pythonlibs/ .  (You will NOT ALWAYS want to use the libraries from the Gohlke collection because they're sometimes less stable than other sources (see Gohlke's warning at the top of the page), so check on the web first and see what other developers are saying, but the Gohlke collection is a great resource to keep in mind.)  The versions of NumPy available in the Gohlke collection are listed on the page here, http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy .  Based on the notes there and things I read elsewhere, I recommend choosing one of the MKL versions.  Since we installed 32-bit Python, we want a version with "win32" in the name, and since we installed Python 2.7, we want a version with "cp27" in the name.  At present, the newest version that fits both those requirements is numpy-1.9.3+mkl-cp27-none-win32.whl.  Downlaod that file.  
 
-Pip installation packages are known as "wheel files" and usually have the extension, ".whl".  After you've downloaded the wheel file, install the package with pip:
+Pip installation package files are known as "wheel files" and usually have the extension, ".whl".  After you've downloaded the wheel file, install the package with pip:
 ```
 pip install Downloads\numpy-1.9.3+mkl-cp27-none-win32.whl
 ```
 (Modify the path to match wherever you've downloaded the wheel file.)
 
-OK.  So now we've installed, Python, NLTK and NumPy.  Let's start up Python by entering `python` at a Windows command prompt.  Then we'll nter some commands to try out NLTK to make sure things are working -- we'll work through the first couple of sections of _Natural Language Processing with Python_, http://www.nltk.org/book/ch01.html (so look at the book at that link if you're wondering where these statements come from -- I'm going to skip some of the statements, here, but you might want to try out all of them):
+OK.  So now we've installed, Python, NLTK and NumPy.  Let's start up Python by entering `python` at a Windows command prompt.  Then we'll enter some Python statements to try out NLTK to make sure things are working -- we'll work through the first couple of sections of _Natural Language Processing with Python_, http://www.nltk.org/book/ch01.html (so look at the book at that link if you're wondering where these statements come from -- I'm going to skip some of the statements, here, but you might want to try out all of them):
 ```
 from __future__ import division
 import nltk
@@ -133,7 +133,7 @@ If everything is working correctly, this should bring up a Graphical User Interf
 from nltk.book import *
 text4.dispersion_plot(["citizens", "democracy", "freedom", "duties", "America"])
 ```
-Oh, no!  Another error.  Reading the error message, it looks like Matplotlib is missing.  What to do?  In situations like this, you'll often find that you can just `pip install missing-library-name`.  Open up another Windows command prompt and give it a try:
+Oh, no!  Another error.  Reading the error message, it looks like Matplotlib is missing.  What to do?  In situations like this, you'll often find that you can just `pip install missing-library-name`.  Open up another **Windows** command prompt and give it a try:
 ```
 pip install matplotlib
 ```
@@ -147,9 +147,9 @@ To learn more about your new friend, Pip, see the official documentation, https:
 
 <a name="tbd"/>
 ## Coming Soon (if I have time):  Some other ways to set things up -- not quite as easy but probably worth the extra effort.
-If you want to be able to run multiple versions of python on your computer or have custom library setups for individual projects, you'll want to use a virtual environment -- this is more useful than you might think.  You can create virtual environments using conda, which comes with Miniconda and Anaconda, or with virtualenv, which you can install with Pip.  I'll try to get around to adding some instructions in this section for how to do that.  In the meantime, you can just google it.
-* Use Miniconda or Anaconda to set up an environment for the class -- this is the way I have things set up.
-* Use the "standard tools", pip and virtualenv, to set up an environment for the class -- this is the way to go if you want to use a Python system that you've already installed.  (In 32-bit environments, this should be as easy as it is for Mac or Unix -- just follow the Mac/Unix instructions, leaving out the "sudo" commands.  To get NumPy installed, this might require setting up the Windows SDK in 64-bit environments, which isn't hard but requires instructions if you're not a programmer-type -- I need to check on this.)
+If you want to be able to run multiple versions of python on your computer or have custom library setups for individual projects, you'll want to use virtual environments -- this is more useful than you might think.  You can create virtual environments using conda, which comes with Miniconda and Anaconda, or with virtualenv, which you can install with Pip.  I'll try to get around to adding some instructions in this section for how to do that.  In the meantime, you can just google it.
+* TBD: Use Miniconda or Anaconda to set up an environment for the class -- this is the way I have things set up.
+* TBD: Use the "standard tools", pip and virtualenv, to set up an environment for the class.
 
 <a name="notes"/>
 ## Special Notes
