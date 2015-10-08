@@ -35,6 +35,10 @@ It's probably 3.0.5.  To change it to 2.0.5:
 pip uninstall nltk
 pip install -Iv nltk==2.0.5
 ```
+To change it to some other version, use that version number instead of "2.0.5".
+
+In principle, the "uninstall" step isn't necessary, but I've seen reports of people having issues if they didn't perform an uninstall first.
+
 Run whatever tests you feel you ought to to give you confidence in the installation.
 
 ## If you installed NLTK using Anaconda or Miniconda:
