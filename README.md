@@ -37,6 +37,8 @@ You'll also notice that the only people posting about installation problems on t
 
 What you'll find here are some easier ways to get things installed on Windows.
 
+(By the way, let this be a lesson:  Many things involving software development and data analysis are better supported when you're not using Windows.)
+
 <a name="easiest"/>
 ## The Easiest Way to Set Up Python and NLTK on Windows
 * Use a pre-packaged "scientific" distribution.
