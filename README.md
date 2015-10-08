@@ -5,11 +5,11 @@
 
 [Initial Comments](#initial)  
 
-[The Easiest Way to Set Up Python and NLTK on Windows](#easiest) -- use a prepackaged "scientific" distribution -- if you don't already have Python installed, and if you don't care whether or not you use the standard Python installer, this is recommended. 
+[Option 1:  The Easiest Way to Set Up Python and NLTK on Windows](#easiest) -- use a prepackaged "scientific" distribution -- if you don't already have Python installed, and if you don't care whether or not you use the standard Python installer, this is recommended. 
 
-[Using the Standard Python Installer and Pip](#stpip) -- if you already have Python installed or if you want to use the standard Python installer, take a look at these instructions.
+[Option 2:  Using the Standard Python Installer and Pip](#stpip) -- if you already have Python installed or if you want to use the standard Python installer, take a look at these instructions.
 
-[Coming Soon (if I have time):  Using virtual environments -- not quite as easy but might be worth the extra effort.](#tbd)  
+[More Options:  Coming Soon (if I have time):  Using virtual environments -- not quite as easy but might be worth the extra effort.](#tbd)  
 * Use Miniconda or Anaconda to set up a virtual environment for the class -- this is the way I have things set up.
 * Use the "standard tools", Pip and virtualenv, to set up a virtual environment for the class -- this is the way to go if you want to use a Python version that you've already installed (say, by downloading and installing the one from http://www.python.org/ ). 
 
@@ -40,7 +40,7 @@ What you'll find here are some easier ways to get things installed on Windows.
 (By the way, let this be a lesson:  Many things involving software development and data analysis are better supported when you're not using Windows.)
 
 <a name="easiest"/>
-## The Easiest Way to Set Up Python and NLTK on Windows
+## Option 1:  The Easiest Way to Set Up Python and NLTK on Windows
 * Use a pre-packaged "scientific" distribution.
 
 The easiest way to set up Python and NLTK on Windows is to use Enthought Canopy, https://www.enthought.com/products/canopy/ , or Continuum Analytics Anaconda, http://docs.continuum.io/anaconda/index .  Both are prepackaged "scientific" distributions that come with a number of Python libraries, such as NLTK and NumPy.  The libraries in each distribution are tested to work well with each other.  These distributions are perfect for people working in the areas of machine learning, language processing, text processing or data science who wish to primarily concentrate on their specific fields of expertise and not on being expert Python programmers (although, they're good environments for expert Python programmers too).  
@@ -73,7 +73,7 @@ The first command will update conda, the package manager that comes with Anacond
   You should see a Graphical User Interface (GUI) pop up.  If you don't want to download any of the collections, just close the window.  I don't know if we'll need any of the downloads for class or not.  You will need some of them if you want to follow the exercises in Natural Language Processing with Python (see section 1.2, http://www.nltk.org/book/ch01.html , for more information).  If something doesn't work or doesn't look right, post a message on the class forum.
 
 <a name="stpip"/>
-## Using the Standard Python Installer and Pip
+## Option 2:  Using the Standard Python Installer and Pip
 
 We're going to use Pip, as shown in the Mac/Unix instructions on the NLTK web site (see picture above), to install NLTK and other libraries.  Pip will make our life easier because it will find libraries and so forth for us.  Cool, huh?
 
