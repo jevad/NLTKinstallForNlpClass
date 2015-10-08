@@ -5,8 +5,7 @@
 
 [Initial Comments](#initial)  
 
-[The Easiest Way to Set Up Python and NLTK on Windows](#easiest) -- if you don't already have Python installed, and if you don't care whether or not you use the standard Python installer, this is recommended. 
-* Use a pre-packaged "scientific" distribution.
+[The Easiest Way to Set Up Python and NLTK on Windows](#easiest) -- use a prepackaged "scientific" distribution -- if you don't already have Python installed, and if you don't care whether or not you use the standard Python installer, this is recommended. 
 
 [Using the Standard Python Installer and Pip](#stpip) -- if you already have Python installed or if you want to use the standard Python installer, take a look at these instructions.
 
