@@ -10,8 +10,8 @@
 [Using the Standard Python Installer and Pip](#stpip) -- if you already have Python installed or if you want to use the standard Python installer, take a look at these instructions.
 
 [Coming Soon (if I have time):  Using virtual environments -- not quite as easy but might be worth the extra effort.](#tbd)  
-* Use Miniconda or Anaconda to set up an environment for the class -- this is the way I have things set up.
-* Use the "standard tools", pip and virtualenv, to set up an environment for the class -- this is the way to go if you want to use a Python version that you've already installed (say, by downloading and installing the one from http://www.python.org/ ). 
+* Use Miniconda or Anaconda to set up a virtual environment for the class -- this is the way I have things set up.
+* Use the "standard tools", Pip and virtualenv, to set up a virtual environment for the class -- this is the way to go if you want to use a Python version that you've already installed (say, by downloading and installing the one from http://www.python.org/ ). 
 
 [Special Notes](#notes)
 * How to get out of the Python prompt
@@ -19,7 +19,7 @@
 
 <a name="audience"/>
 ## Audience
-This page is to help my classmates taking the Coursera NLP class.  Some of us have had difficulty getting Python and NLTK set up properly.  If this is useful to anyone else, so much the better.
+This page is to help my classmates taking an online NLP class that uses Python and NLTK.  Some of us have had difficulty getting Python and NLTK set up properly.  If this is useful to anyone else, so much the better.
 
 <a name="initial"/>
 ## Initial Comments
