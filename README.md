@@ -89,7 +89,7 @@ echo %PATH%
 ```
 Do you see BOTH C:\Python27 and C:\Python27\Scripts in your path?  If not, you'll want to modify your system PATH, so you can run the programs in these directories without having to type in the full path to them every time.  How you do that will vary a bit depending on which version of Windows you're using, but, here's how it works on Windows 7:  
 1. Go to Control Panel -> System -> Advanced system settings.  
-2. Click on "Environment Variables..." to open up the environment variables editor.
+2. Click on "Environment Variables..." to open up the environment variables editor.  
 3. In the "System variables" section (if you installed Python for "All Users") or in the "User variables" section (if you installed Python just for yourself), click on the PATH variable and then click "Edit...".  
 4. VERY CAREFULLY add C:\Python27 (if it is missing) and C:\Python27\Scripts (if it is missing) to your PATH.  It is important to know and remember that the elements of the PATH are separated by semicolons, `;`, but not by spaces.  The PATH is read in order by the operating system, so, if there are two Python installations on your computer, the one that appears first in the PATH will be the one that will be used (in most cases -- some programs, especially IDEs, have a different way of finding other programs, but we won't worry about that for now).  
 5.  When you're satisfied that you have everything as it should be, keep clicking "OK" to save and back out.
