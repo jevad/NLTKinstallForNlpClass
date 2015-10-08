@@ -1,5 +1,7 @@
 # Setting up Python and NLTK on Windows for the NLP Class
 
+**IMPORTANT UPDATE:**  If you follow these instructions (or the instructions on the NLTK web site), you will install NLTK version 3.0.5 or 3.0.3 (as of 7 Oct 2015).  We have been informed that we should be using NLTK 2.  For instructions on downgrading, see [Changing the version of NLTK](./downgradeNLTK.md).
+
 ##### Table of Contents  
 [Audience](#audience)  
 
