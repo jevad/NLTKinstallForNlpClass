@@ -26,6 +26,8 @@ _the official source code_:  In situations like this, it never hurts to track do
 Download the source for the version you want, and install the new version the same way you did the old version.
 
 ## If you installed NLTK using Pip:
+(Note:  If you know how to use virtualenv to create virtual environments, this might be a great time to do so.  You could create a virtual environment, just for this class, adjusting the software versions to match exactly what is needed for the class.)
+
 Check your currently installed version of NLTK:
 ```
 pip list
@@ -41,4 +43,22 @@ In principle, the "uninstall" step isn't necessary, but I've seen reports of peo
 
 Run whatever tests you feel you ought to to give you confidence in the installation.
 
+(Note:  I tested this a bit, and it worked fine.  To get more advanced features of NLTK to work, you *may* also end up having to downgrade other packages, such as NumPy.) 
+
 ## If you installed NLTK using Anaconda or Miniconda:
+(Note:  If you know how to use conda to create virtual environments, this might be a great time to do so.  You could create a virtual environment, just for this class, adjusting the software versions to match exactly what is needed for the class.  http://conda.pydata.org/docs/using/envs.html )
+
+Check your currently installed version of NLTK:
+```
+conda list nltk
+```
+It's probably 3.0.5 or 3.0.3.  To see what versions of NLTK are available inthe conda ecosystem:
+```
+conda list nltk
+```
+To change the version to 2.0.5:
+```
+conda uninstall nltk
+conda install nltk==2.0.4
+```
+(Note that conda automatically downgraded NumPy to go with this NLTK downgrade.)
