@@ -16,7 +16,7 @@ https://github.com/nltk/nltk/releases .  (You might have click "Next" at the bot
 
 ### Here's how I went about finding the links to NLTK 2.x:  
 
-In interest of "teaching a man to fish", here's how I knew where to find the links.  You can skip this section, however, and come back to it later if you find that you need to know.
+In interest of "teaching a man to fish", here's how I knew where to find the links.  You can skip this section, however.  It is not needed for anything that follows.
 
 _Searching on PyPI_:  By default, PyPI will only show you the most recent version of something.  So, for example, if you follow the "download" link on the NLTK web site, you'll end up here, https://pypi.python.org/pypi/nltk , which presently shows version 3.0.5 -- the most recent stable version.  Frustratingly, there is no link on that page to see a complete list which other versions of NLTK are available.  You could do a Google site-search, but there is no guarantee that it will give you a complete list.  Thankfully, there is a hack that works for now:  In the preceding URL, replace "pypi" with "simple", https://pypi.python.org/simple/nltk/ .  And, from there, you can browse, and download, all the NLTK versions that are on PyPI.  If you then want to see the notes associated with one of those versions, you replace "simple" with "pypi" and add the version number at the end.  So, if you want to see the notes for version 2.0.4, you enter a URL like this, https://pypi.python.org/pypi/nltk/2.0.5 . Note that the most recent version shown here is 2.0.5 -- I'll get back to that later.
 
