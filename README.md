@@ -45,6 +45,8 @@ What you'll find here are some easier ways to get things installed on Windows.
 ## Option 1:  The Easiest Way to Set Up Python and NLTK on Windows
 * Use a pre-packaged "scientific" distribution.
 
+**IMPORTANT UPDATE:**  If you follow these instructions (or the instructions on the NLTK web site), you will install NLTK version 3.0.5 or 3.0.3 (as of 7 Oct 2015).  We have been informed that we should be using NLTK 2.  For instructions on downgrading, see [Changing the version of NLTK](./downgradeNLTK.md).
+
 The easiest way to set up Python and NLTK on Windows is to use Enthought Canopy, https://www.enthought.com/products/canopy/ , or Continuum Analytics Anaconda, http://docs.continuum.io/anaconda/index .  Both are prepackaged "scientific" distributions that come with a number of Python libraries, such as NLTK and NumPy.  The libraries in each distribution are tested to work well with each other.  These distributions are perfect for people working in the areas of machine learning, language processing, text processing or data science who wish to primarily concentrate on their specific fields of expertise and not on being expert Python programmers (although, they're good environments for expert Python programmers too).  
 
 Both come with instructions, but, since we've had bad luck with instructions so far, here are my instructions for one of them (Anaconda):
@@ -74,8 +76,12 @@ The first command will update conda, the package manager that comes with Anacond
   ```
   You should see a Graphical User Interface (GUI) pop up.  If you don't want to download any of the collections, just close the window.  I don't know if we'll need any of the downloads for class or not.  You will need some of them if you want to follow the exercises in Natural Language Processing with Python (see section 1.2, http://www.nltk.org/book/ch01.html , for more information).  If something doesn't work or doesn't look right, post a message on the class forum.
 
+**IMPORTANT UPDATE:**  If you follow these instructions (or the instructions on the NLTK web site), you will install NLTK version 3.0.5 or 3.0.3 (as of 7 Oct 2015).  We have been informed that we should be using NLTK 2.  For instructions on downgrading, see [Changing the version of NLTK](./downgradeNLTK.md).
+
 <a name="stpip"/>
 ## Option 2:  Using the Standard Python Installer and Pip
+
+**IMPORTANT UPDATE:**  If you follow these instructions (or the instructions on the NLTK web site), you will install NLTK version 3.0.5 or 3.0.3 (as of 7 Oct 2015).  We have been informed that we should be using NLTK 2.  For instructions on downgrading, see [Changing the version of NLTK](./downgradeNLTK.md).
 
 We're going to use Pip, as shown in the Mac/Unix instructions on the NLTK web site (see picture above), to install NLTK and other libraries on Windows.  Pip will make our life easier because it will find libraries and so forth for us.  And, besides, why should the Mac and Unix users have all the fun?
 
@@ -146,6 +152,8 @@ text4.dispersion_plot(["citizens", "democracy", "freedom", "duties", "America"])
 And it works!  Hooray!  :sparkles: :rocket: :sparkles:  You're on your way to a happy and productive future with Python and Pip!
 
 To learn more about your new friend, Pip, see the official documentation, https://pip.pypa.io/en/stable/ .
+
+**IMPORTANT UPDATE:**  If you follow these instructions (or the instructions on the NLTK web site), you will install NLTK version 3.0.5 or 3.0.3 (as of 7 Oct 2015).  We have been informed that we should be using NLTK 2.  For instructions on downgrading, see [Changing the version of NLTK](./downgradeNLTK.md).
 
 <a name="tbd"/>
 ## Coming Soon (if I have time):  Some other ways to set things up -- not quite as easy but probably worth the extra effort.
