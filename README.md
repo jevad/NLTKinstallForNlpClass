@@ -75,7 +75,7 @@ The first command will update conda, the package manager that comes with Anacond
 <a name="stpip"/>
 ## Option 2:  Using the Standard Python Installer and Pip
 
-We're going to use Pip, as shown in the Mac/Unix instructions on the NLTK web site (see picture above), to install NLTK and other libraries.  Pip will make our life easier because it will find libraries and so forth for us.  Cool, huh?
+We're going to use Pip, as shown in the Mac/Unix instructions on the NLTK web site (see picture above), to install NLTK and other libraries on Windows.  Pip will make our life easier because it will find libraries and so forth for us.  And, besides, why should the Mac and Unix users have all the fun?
 
 First, we need to download and install Python (if you have not already done so).  The Professor wants to use Python 2.7, so get the latest version of Python 2.7, so go here, https://www.python.org/downloads/ , find the latest version of Python 2.7, and click on the download link.  You'll see a bunch of choices.  For these instructions, we're going to choose the 32-bit MSI installer (which you can identify as the MSI installer that is NOT 64-bit).  There's nothing wrong with the 64-bit version, and you can make the 64-bit version work if you wish, but, as far as I can tell, most of you have already installed the 32-bit version (perhaps due to the warning on the NLTK instructions), so I'm using the 32-bit version here.  
 
