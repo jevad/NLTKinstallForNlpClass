@@ -41,7 +41,9 @@ What you'll find here are some easier ways to get things installed on Windows.
 ## The Easiest Way to Set Up Python and NLTK on Windows
 * Use a pre-packaged "scientific" distribution.
 
-The easiest way to set up Python and NLTK on Windows is to use Enthought Canopy, https://www.enthought.com/products/canopy/ , or Continuum Analytics Anaconda, http://docs.continuum.io/anaconda/index .  Both are prepackaged "scientific" distributions that come with a number of Python libraries, such as NLTK and NumPy.  The libraries in each distribution are tested to work well with each other.  These distributions are perfect for people working in the areas of machine learning, language processing, text processing or data science who wish to primarily concentrate on their specific field of expertise and not on being an expert Python programmer (although, they're good environments for expert Python programmers too).  Both come with instructions, but, since we've had bad luck with instructions so far, here are my instructions for one of them (Anaconda):
+The easiest way to set up Python and NLTK on Windows is to use Enthought Canopy, https://www.enthought.com/products/canopy/ , or Continuum Analytics Anaconda, http://docs.continuum.io/anaconda/index .  Both are prepackaged "scientific" distributions that come with a number of Python libraries, such as NLTK and NumPy.  The libraries in each distribution are tested to work well with each other.  These distributions are perfect for people working in the areas of machine learning, language processing, text processing or data science who wish to primarily concentrate on their specific fields of expertise and not on being expert Python programmers (although, they're good environments for expert Python programmers too).  
+
+Both come with instructions, but, since we've had bad luck with instructions so far, here are my instructions for one of them (Anaconda):
 
 1. Download Anaconda for Python 2.7 from https://www.continuum.io/downloads#_windows .  Get the version that matches your processor.  This is a 335 MB download, so you have time to grab a cup of coffee if you're on a slow network -- resist the temptation to watch cat videos while you're waiting as that will chew up your bandwidth (unless, of course, you planned ahead and have already downloaded cat videos just for this purpose).  
 
@@ -76,8 +78,8 @@ We're going to use Pip, as shown in the Mac/Unix instructions on the NLTK web si
 First, we need to download and install Python (if you have not already done so).  The Professor wants to use Python 2.7, so get the latest version of Python 2.7, so go here, https://www.python.org/downloads/ , find the latest version of Python 2.7, and click on the download link.  You'll see a bunch of choices.  For these instructions, we're going to choose the 32-bit MSI installer (which you can identify as the MSI installer that is NOT 64-bit).  There's nothing wrong with the 64-bit version, and you can make the 64-bit version work if you wish, but, as far as I can tell, most of you have already installed the 32-bit version (perhaps due to the warning on the NLTK instructions), so I'm using the 32-bit version here.  
 
 You'll be given some options when you install Python.  
-* **On the "Customize Python" page, you should choose to "Add python.exe to Path.**  This will add the directory containing Python to your system PATH, which will allow you to run Python without typing in the full path name.  
-* Also, for these instructions, I'm assuming that you installed Python in C:\Python27 (That's the "Install for all users option".).  **If you installed it somewhere else, that's fine, but you'll need to modify the paths that appear in the rest of these instructions to reflect your installation.**
+* For these instructions, I'm assuming that you installed Python in C:\Python27 (That's the "Install for all users option".).  **If you installed it somewhere else, that's fine, but you'll need to modify the paths that appear in the rest of these instructions to reflect your installation.**
+* **On the "Customize Python" page, you should choose to "Add python.exe to Path".**  This will add the directory containing Python to your system PATH, which will allow you to run Python without typing in the full path name.  
 
 OK.  So we have Python installed.  Open a new Windows command prompt and enter:
 ```
@@ -85,7 +87,7 @@ echo %PATH%
 ```
 Do you see BOTH C:\Python27 and C:\Python27\Scripts in your path?  If not, you'll want to modify your system PATH, so you can run the programs in these directories without having to type in the full path to them every time.  How you do that will vary a bit depending on which version of Windows you're using, but, here's how it works on Windows 7:  
 1. Go to Control Panel -> System -> Advanced system settings.  
-2. Click on "Environment Variables..."
+2. Click on "Environment Variables...".
 3. In the "System variables" section (if you installed Python for "All Users") or in the "User variables" section (if you installed Python just for yourself), click on the PATH variable and then click "Edit...".  
 4. VERY CAREFULLY add C:\Python27 (if it is missing) and C:\Python27\Scripts (if it is missing) to your PATH.  It is important to know and remember that the elements of the PATH are separated by semicolons, `;`, but not by spaces.  The PATH is read in order by the operating system, so, if there are two Python installations on your computer, the one that appears first in the PATH will be the one that will be used (in most cases -- some programs, especially IDEs, have a different way of finding other programs, but we won't worry about that for now).  
 5.  When you're satisfied that you have everything as it should be, keep clicking "OK" to save and back out.
