@@ -6,7 +6,7 @@ If you installed NLTK using any of the [instructions on the NLTK web site](http:
 Ideas for performing a backgrade appear below.
 
 ## Finding NLTK 2.x.
-First, you have to find NLTK 2.x.  There are no links for NLTK 2.x on the NLTK web site, and no *obvious* links for NLTK 2.x on the PyPI web site.  
+First, you have to find NLTK 2.x releases, so you can decide exactly which one to install.  There are no links for NLTK 2.x on the NLTK web site, and no *obvious* links for NLTK 2.x on the PyPI web site.  
 
 Here's where I found links to NLTK 2.x:
 
