@@ -7,12 +7,10 @@ Ideas for performing a version change appear below.
 
 ##### Table of Contents  
 [Finding NLTK 2.x](#finding)  
-
 [If you installed NLTK manually](#manually)  
-
 [If you installed NLTK using Pip](#usingpip)
-
 [If you installed NLTK using Anaconda or Miniconda](#usingconda)
+[Here's how I went about finding the links to NLTK 2.x](#findingversions")
 
 <a name="finding"/>
 ## Finding NLTK 2.x:
@@ -70,6 +68,7 @@ conda install nltk==2.0.4
 ```
 (Note that conda automatically downgraded NumPy to go with this NLTK downgrade.)
 
+<a name="findingversions"/>
 ## Here's how I went about finding the links to NLTK 2.x:  
 
 In the interest of "teaching a man to fish", here's how I knew where to find the links.  You can skip this section, however, if it is not of interest to you.
