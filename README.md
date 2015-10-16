@@ -130,8 +130,9 @@ pip install --upgrade "scipy>=0.9"
 ```
 You'll probably run into the same problem you did with NumPy.  Once again, the Gohlke Collection, looks like a good solution.  You can find the file here, http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy .  
 ```
-pip install ..\Downloads\scipy-0.16.0-cp27-none-win32.whl
+pip install Downloads\scipy-0.16.0-cp27-none-win32.whl
 ```
+(Modify the path to match wherever you've downloaded the wheel file.)
 
 Now let's install scikit-learn:
 ```
