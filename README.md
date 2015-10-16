@@ -12,7 +12,7 @@
 [Option 3: Use Miniconda or Anaconda to set up an Environment](#condawithenvironments") -- use environments like all the cool kids.  
 
 [More Options:  Coming Soon (if I have time):  Using virtual environments -- not quite as easy but might be worth the extra effort.](#tbd)  
-* ([DONE](#condawithenvironments") Use Miniconda or Anaconda to set up a virtual environment for the class -- this is the way I have things set up.
+* ([DONE](#condawithenvironments) Use Miniconda or Anaconda to set up a virtual environment for the class -- this is the way I have things set up.
 * Use the "standard tools", Pip and virtualenv, to set up a virtual environment for the class -- this is the way to go if you want to use a Python version that you've already installed (say, by downloading and installing the one from http://www.python.org/ ). 
 
 [Special Notes](#notes)
@@ -206,7 +206,7 @@ deactivate
 <a name="tbd"/>
 ## Coming Soon (if I have time):  Some other ways to set things up -- not quite as easy but probably worth the extra effort.
 If you want to be able to run multiple versions of python on your computer or have custom library setups for individual projects, you'll want to use virtual environments -- this is more useful than you might think.  You can create virtual environments using conda, which comes with Miniconda and Anaconda, or with virtualenv, which you can install with Pip.  I'll try to get around to adding some instructions in this section for how to do that.  In the meantime, you can just google it.
-* [Already done](#condawithenvironments"): Use Miniconda or Anaconda to set up an environment for the class -- this is the way I have things set up.
+* [Already done](#condawithenvironments): Use Miniconda or Anaconda to set up an environment for the class -- this is the way I have things set up.
 * TBD: Use the "standard tools", pip and virtualenv, to set up an environment for the class.
 
 <a name="notes"/>
@@ -216,14 +216,16 @@ If you want to be able to run multiple versions of python on your computer or ha
 
 <a name="setpath"/>
 ## Setting the System PATH
-OK.  So we have Python installed.  Look at the installation in Windows Explorer.  The top directory of the installation will contain python.exe (among other things), and, in that directory, there will be a Scripts directory that will contain pip.exe (among other thigns).  
+OK.  So we have Python installed.  Look at the installation in Windows Explorer.  The top directory of the installation will contain python.exe (among other things), and, in that directory, there will be a Scripts directory that will contain pip.exe (among other things).  
 
 Open a new Windows command prompt and enter:
 ```
 echo %PATH%
 ```
 Do you see BOTH the top directory and and the Scripts in your path?  If not, and if you want them to be in your path, you'll need to modify your system PATH, so you can run the programs in these directories without having to type in the full path to them every time.  How you do that will vary a bit depending on which version of Windows you're using, but, here's how it works on Windows 7: 
+
 (For these instructions, I'm assuming that your top directory is C:\Python27 and your Scripts directory is C:\Python27\Scripts.  Note that your directories may be different.  In fact, if you're using Miniconda or Anaconda, they're almost certainly different.)
+
 1. Go to Control Panel -> System -> Advanced system settings.  
 2. Click on "Environment Variables..." to open up the environment variables editor.  
 3. In the "System variables" section (if you installed Python for "All Users") or in the "User variables" section (if you installed Python just for yourself), click on the PATH variable and then click "Edit...".  
