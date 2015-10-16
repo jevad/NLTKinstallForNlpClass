@@ -167,7 +167,7 @@ This is actually the way I have things set up.
 
 Download and install either Anaconda, https://www.continuum.io/downloads , or Miniconda, http://conda.pydata.org/miniconda.html .  The difference between the two is that Miniconda is a fairly bare-bones Python development environment; whereas, Anaconda includes many scientific computing libraries that work well together, resulting in a full scientific computing and data analysis environment.  For our purposes, it doesn't make much difference which one you choose.  And, for that matter, it actually doesn't make much difference if you install the Python 2 version or the Python 3 version.  If you're on a very slow internet connection, Miniconda is much smaller than Anaconda, and, also, you'll save yourself the trouble of downloading Python 2.7, when you create your environment, if you choose the Python 2 version, since it will already be on your machine.
 
-Documentation for how to use the `conda` tool may be found here, http://conda.pydata.org/docs/install/quick.html .  There is also a useful cheat sheet, http://conda.pydata.org/docs/_downloads/conda-cheatsheet.pdf .
+Documentation for how to use the conda tool may be found here, http://conda.pydata.org/docs/install/quick.html .  There is also a useful cheat sheet, http://conda.pydata.org/docs/_downloads/conda-cheatsheet.pdf .
 
 Once you have installed Anaconda or Miniconda, update the system:
 ```
@@ -190,7 +190,7 @@ Once you've created the environment, you need to activate it in order to use it:
 ```
 activate nlpclass
 ```
-Note that your command prmopt is now preceded with `[nlpclass]` (or whatever name you chose).  If you examine your system PATH (`echo %PATH%`), you'll see that, in this environment, environment-specific directories are at the top of the PATH.  
+Note that your command prompt is now preceded with `[nlpclass]` (or whatever name you chose).  If you examine your system PATH (`echo %PATH%`), you'll see that, in this environment, environment-specific directories are at the top of the PATH.  Note that the environment is activated for this command window only.  Other command windows, IDEs et cetera will not use this environment unless you also activate it there.  (In fact, you could be using several environments at once in different windows.)  
 
 Let's verify that the libraries we want are in this environment:
 ```
