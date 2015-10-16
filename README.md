@@ -9,7 +9,7 @@
 
 [Option 2:  Using the Standard Python Installer and Pip](#stpip) -- if you already have Python installed or if you want to use the standard Python installer, take a look at these instructions.
 
-[Option 3: Use Miniconda or Anaconda to set up an Environment](#condawithenvironments") -- use environments like all the cool kids.  
+[Option 3: Use Miniconda or Anaconda to set up an Environment](#condawithenvironments) -- use environments like all the cool kids.  
 
 [More Options:  Coming Soon (if I have time):  Using virtual environments -- not quite as easy but might be worth the extra effort.](#tbd)  
 * ([DONE](#condawithenvironments) Use Miniconda or Anaconda to set up a virtual environment for the class -- this is the way I have things set up.
