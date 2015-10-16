@@ -182,7 +182,8 @@ conda create -n nlpclass python=2.7 nltk=3.0 numpy scipy scikit-learn=0.15
 You can read the conda documentation for full information, but, basically, what this command does, is:
 * It creates an environment named, nlpclass.  (There is nothing special about that name -- feel free to use whatever name you wish).
 * It uses Python 2.7.x as the base Python version for this environment.
-* At the same time, it also installs NLTK 3.0.x, numpy (latest version), scipy (latest version) and scikit-learn 0.15.x.\
+* At the same time, it also installs NLTK 3.0.x, numpy (latest version), scipy (latest version) and scikit-learn 0.15.x.
+
 Actually, I added a few additional libraries, so I created the environment with this command:
 ```
 conda create -n nlpclass python=2.7 nltk=3 numpy scipy scikit-learn=0.15 matplotlib jupyter networkx
