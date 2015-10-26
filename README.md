@@ -186,7 +186,7 @@ You can read the conda documentation for full information, but, basically, what 
 
 Actually, I added a few additional libraries, so I created the environment with this command:
 ```
-conda create -n nlpclass python=2.7 nltk=3 numpy scipy scikit-learn=0.15 matplotlib jupyter networkx
+conda create -n nlpclass python=2.7 nltk=3.0 numpy scipy scikit-learn=0.15 matplotlib jupyter networkx
 ```
 Once you've created the environment, you need to activate it in order to use it:
 ```
