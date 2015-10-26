@@ -1,4 +1,4 @@
-# Setting up Python and NLTK on Windows for the NLP Class
+# Suggestions for Setting up Python and NLTK on Windows for the NLP Class
 
 ##### Table of Contents  
 [Audience](#audience)  
