@@ -206,7 +206,7 @@ deactivate
 
 <a name="tbd"/>
 ## Coming Soon -- Pip and Virtual Environments:
-If you want to be able to run multiple versions of python on your computer or have custom library setups for individual projects, you'll want to use virtual environments -- this is more useful than you might think.  You can create virtual environments using conda, which comes with Miniconda and Anaconda (see [Option 3](#condawithenvironments), or with virtualenv, which you can install with Pip.  I'll try to get around to adding some instructions in this section for how to do that.  In the meantime, you can just google it.
+If you want to be able to run multiple versions of python on your computer or have custom library setups for individual projects, you'll want to use virtual environments -- this is more useful than you might think.  You can create virtual environments using conda, which comes with Miniconda and Anaconda (see [Option 3](#condawithenvironments)), or with virtualenv, which you can install with Pip.  I'll try to get around to adding some instructions in this section for how to do that.  In the meantime, you can just google it.
 * TBD: Use the "standard tools", pip and virtualenv, to set up an environment for the class.
 
 <a name="notes"/>
