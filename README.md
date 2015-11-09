@@ -11,9 +11,8 @@
 
 [Option 3: Use Miniconda or Anaconda to set up an Environment](#condawithenvironments) -- use environments like all the cool kids.  
 
-[More Options:  Coming Soon (if I have time):  Using virtual environments -- not quite as easy but might be worth the extra effort.](#tbd)  
-* ([DONE](#condawithenvironments) Use Miniconda or Anaconda to set up a virtual environment for the class -- this is the way I have things set up.
-* Use the "standard tools", Pip and virtualenv, to set up a virtual environment for the class -- this is the way to go if you want to use a Python version that you've already installed (say, by downloading and installing the one from http://www.python.org/ ). 
+[Option 4:  Using virtual environments](#tbd)  
+* TO BE DONE:  Use the "standard tools", Pip and virtualenv, to set up a virtual environment for the class -- this is the way to go if you want to use a Python version that you've already installed (say, by downloading and installing the one from http://www.python.org/ ). 
 
 [Special Notes](#notes)
 * How to get out of the Python prompt
@@ -206,9 +205,8 @@ deactivate
 ```
 
 <a name="tbd"/>
-## Coming Soon (if I have time):  Some other ways to set things up -- not quite as easy but probably worth the extra effort.
-If you want to be able to run multiple versions of python on your computer or have custom library setups for individual projects, you'll want to use virtual environments -- this is more useful than you might think.  You can create virtual environments using conda, which comes with Miniconda and Anaconda, or with virtualenv, which you can install with Pip.  I'll try to get around to adding some instructions in this section for how to do that.  In the meantime, you can just google it.
-* [Already done](#condawithenvironments): Use Miniconda or Anaconda to set up an environment for the class -- this is the way I have things set up.
+## Coming Soon -- Pip and Virtual Environments:
+If you want to be able to run multiple versions of python on your computer or have custom library setups for individual projects, you'll want to use virtual environments -- this is more useful than you might think.  You can create virtual environments using conda, which comes with Miniconda and Anaconda (see [Option 3](#condawithenvironments), or with virtualenv, which you can install with Pip.  I'll try to get around to adding some instructions in this section for how to do that.  In the meantime, you can just google it.
 * TBD: Use the "standard tools", pip and virtualenv, to set up an environment for the class.
 
 <a name="notes"/>
